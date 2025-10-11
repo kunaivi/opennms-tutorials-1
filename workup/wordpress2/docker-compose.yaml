@@ -19,7 +19,8 @@ volumes:
 services:
 
   nginx:
-    image: nginx:1.23-alpine
+    #image: nginx:1.23-alpine
+    image: exoplatform/nginx:1.26.3  # has nginx-sticky-module-ng to adds session persistence
     container_name: nginx
     hostname: nginx
     restart: unless-stopped
@@ -70,7 +71,7 @@ services:
     container_name: wordpress1
     hostname: wordpress1
     ports:
-      - 8000:80
+      - 8001:80
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
@@ -89,52 +90,59 @@ services:
         ipv4_address: 172.20.0.80
         
 #  # test wordpress site
-#  wordpress2:
-#    depends_on:
-#      - db
-#    image: wordpress:latest
-#    container_name: wordpress2
-#    hostname: wordpress2
-#    ports:
-#      - 8001:80
-#    restart: always
-#    environment:
-#      WORDPRESS_DB_HOST: db:3306
-#      WORDPRESS_DB_NAME: wordpress
-#      WORDPRESS_DB_USER: wordpress
-#      WORDPRESS_DB_PASSWORD: wordpress
-#      WORDPRESS_TABLE_PREFIX: "wp_"
-#      WORDPRESS_DEBUG: 1
-#    # vstm: add shared volume
-#    volumes:
-#      - wp_data:/var/www/html
-#    networks:
-#      N000:
+  # test wordpress site
+  wordpress2:
+    depends_on:
+      - db
+    image: wordpress:latest
+    container_name: wordpress2
+    hostname: wordpress2
+    ports:
+      - 8002:80
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_TABLE_PREFIX: "wp_"
+      WORDPRESS_DEBUG: 1
+    # note working dir must match the url root of wordpress installation
+    working_dir: /var/www/html/wordpress
+    # vstm: add shared volume
+    volumes:
+      - wp_data:/var/www/html
+    networks:
+      N000:
 #        ipv4_address: 172.20.0.82
 #        
 #  # word press server 3
 #  wordpress3:
-#    depends_on:
-#      - db
-#    image: wordpress:latest
-#    container_name: wordpress3
-#    hostname: wordpress3
-#    ports:
-#      - 8002:80
-#    restart: always
-#    environment:
-#      WORDPRESS_DB_HOST: db:3306
-#      WORDPRESS_DB_NAME: wordpress
-#      WORDPRESS_DB_USER: wordpress
-#      WORDPRESS_DB_PASSWORD: wordpress
-#      WORDPRESS_TABLE_PREFIX: "wp_"
-#      WORDPRESS_DEBUG: 1
-#    # vstm: add shared volume
-#    volumes:
-#      - wp_data:/var/www/html
-#    networks:
-#      N000:
-#        ipv4_address: 172.20.0.83
+  # test wordpress site
+  wordpress3:
+    depends_on:
+      - db
+    image: wordpress:latest
+    container_name: wordpress3
+    hostname: wordpress3
+    ports:
+      - 8003:80
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_TABLE_PREFIX: "wp_"
+      WORDPRESS_DEBUG: 1
+    # note working dir must match the url root of wordpress installation
+    working_dir: /var/www/html/wordpress
+    # vstm: add shared volume
+    volumes:
+      - wp_data:/var/www/html
+    networks:
+      N000:
+        ipv4_address: 172.20.0.83
 
   # word press cli used to set up the word press site we are monitoring without manual intervention
   # see https://stackoverflow.com/questions/50999848/how-to-run-wp-cli-in-docker-compose-yml
@@ -142,6 +150,8 @@ services:
     depends_on:
       - db
       - wordpress1
+      - wordpress2
+      - wordpress3
     image: wordpress:cli
     container_name: wordpress-cli
     hostname: wordpress-cli

@@ -53,3 +53,6 @@ https://github.com/nezhar/wordpress-docker-compose/blob/master/docker-compose.ym
 
 
 https://blog.alphabravo.io/leveling-up-from-docker-compose-to-kubernetes-and-helm-with-wordpress/
+
+
+https://nginx.org/en/docs/http/load_balancing.html
