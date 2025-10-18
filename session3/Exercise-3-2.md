@@ -19,7 +19,7 @@ The OpenNMS core SNMP trap port is set in the file [etc/trapd-configuration.xml]
 
 It is worth noting that this file also contains a setting `new-suspect-on-trap="false"` which if set `true` will cause OpenNMS to scan for a new node if it does not recognise the `from IP address` field of the trap packet.
 
-In our example [docker-compose.yaml](../session2/minimal-minion-activemq/docker-compose.yaml) file, you will see that each of the netsnmp containers exposes a different port on the host system. 
+In our example [docker-compose.yaml](../session3/minimal-minion-activemq/docker-compose.yaml) file, you will see that each of the netsnmp containers exposes a different port on the host system. 
 And the core OpenNMS horizon and the minion1 receive SNMP traps from the host on 10162 and 1162 respectively.
 
 | container | Native SNMP port | Host Exposed SNMP Port |
@@ -111,7 +111,7 @@ In the Mibbrowser, we need to define and send a trap using the following configu
 | varbind 2 |OID .1.3.6.1.4.1.52330.6.2.1.0 type integer value 0 |
 | varbind 3 |OID .1.3.6.1.4.1.52330.6.2.5.0 type integer value 1 |
 
-![alt text](../session2/images/sendTrap1.png "Figure sendTrap1.png")
+![alt text](../session3/images/sendTrap1.png "Figure sendTrap1.png")
 
 Lets call this 
 
@@ -212,7 +212,7 @@ snmptrap -v 2c -c public horizon:1162 ""  .1.3.6.1.4.1.52330.6.2.0.1        .1.3
 
 ```
 
-We will create an event configuration to match against our new trap in [Exercise-3-3](../session2/Exercise-3-3.md)
+We will create an event configuration to match against our new trap in [Exercise-3-3](../session3/Exercise-3-3.md)
 
 
 
