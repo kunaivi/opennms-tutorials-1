@@ -27,7 +27,7 @@ This container waits for 20 seconds to allow the database and the containers to 
       '
 ```
 After this initialisation step, this container exits.
-Without wordpress-cli, you would have the manually configure the wordpress instance on first start.
+Without wordpress-cli, you would have t0 manually configure the Wordpress instance on first start.
 
 The nginx configuration is held in [wp-load-balencer-with-ssl.conf](..\session2\minimal-minion-activemq\container-fs\nginx\conf.d\wp-load-balencer-with-ssl.conf).
 THis sets up https termination and the round robin request forwarding the the three wordpress servers.
@@ -77,7 +77,7 @@ The `wordpress-cli` container configures the wordpress instances with an initial
 
 All three containers sit behind the nginx container which both terminates the https/tls traffic and acts as a round robin load balancer.
 
-browse to `https://localhost` and view the following  landing page with links to wordpress and wordpress admin pages
+browse to `https://localhost` and view the following landing page with links to wordpress and wordpress admin pages
 
 ![alt text](../session2/images/nginx-html.png "Figure nginx-html.png")
 
