@@ -1,6 +1,6 @@
 # Exercise 3-1 
 
-[Main Menu](../README.md) | [Session 3](../session3/README.md) | [Exercise-3-1](../session3/Exercise-3-1.md)
+[Main Menu](../README.md) | [Session 3](../session3/README.md) | [Exercise-3-4](../session3/Exercise-3-4.md)
 
 In this exercise we will start with the basic event configurations generated from the camera mib and add appropriate alarm behaviour.
 
