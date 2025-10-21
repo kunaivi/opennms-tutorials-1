@@ -178,19 +178,20 @@ Remember, OpenNMS ignores the OID of the varbind but uses the `<vbnumber>` order
 
 The `<descr>` and `<logmsg>` fields contain the human readable text for the event.
 The varbinds can be included in this text using the excape sequence `%parm[#3]%` where `#3` indicates the third param (or varbind).
-HTML escape sequences can also be included in the text but because the event file is in XML, we need to use character codes for reserved characters such as &lt; for < characters.
+HTML escape sequences can also be included in the text but because the event file is in XML, we need to use html character codes for reserved characters such as `&lt;` for `<` characters.
 
 The `<severity>` field can have the values (corresponding to standard ITU X733 definitions)
 
-```
-    Critical: Numerous devices are impacted by an event.
-    Major: A device is down, or in danger of going down.
-    Minor: A part of a device (service, interface, power supply, and so on) has stopped functioning.
-    Warning: An event has occurred that may require action.
-    Normal: Informational severity message; no action is required.
-    Cleared: Indicates that an alarm with a self-clearing error condition has been corrected, and service is restored.
-    Indeterminate: No severity could be associated with the event.
-```
+|Severity   |                                                         |
+|-----------|---------------------------------------------------------|
+| Critical  | Numerous devices are impacted by an event. |
+| Major     | A device is down, or in danger of going down. |
+| Minor     | A part of a device (service, interface, power supply, and so on) has stopped functioning. |
+| Warning   | An event has occurred that may require action.|
+| Normal    | Informational severity message; no action is required. |
+| Cleared   | Indicates that an alarm with a self-clearing error condition has been corrected, and service is restored.|
+| Indeterminate | No severity could be associated with the event. |
+
 ## how does the alarm definition work
 
 You will see that the `example trap definition 1 RAISE` event also contains an `<alarm-data>` element.
