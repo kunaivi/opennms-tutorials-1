@@ -8,7 +8,7 @@ In this exercise we will start with the basic event configurations generated fro
 A set of example trap definitions to use in tests of your configuration are provided in [CHUBB SNMP Example Traps](../session3/ExampleTrapsCHUBB-TVBS-CAMERA-MIB.md). 
 You should be able to create traps for all of the possible event combinations described in the mib.
 
-A set of example configurations as a result of completing this exercise are provided in [Example Configurations](../session3/minimal-minion-activemq/example-configurations/) but try the exercise first before looking at the examples.
+A set of example configurations as a result of completing this exercise are provided in [Example Configurations](../session3/example-configurations/) but try the exercise first before looking at the examples.
 
 ## Step 1 - check you can send traps and generate events with the initial config
 
