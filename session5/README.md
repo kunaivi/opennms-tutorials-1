@@ -42,10 +42,10 @@ You can access the following exposed services through the host system's localhos
 | URL / Command                        | Description                           |
 |:-------------------------------------|:--------------------------------------|
 |http://localhost:8980                 | The OpenNMS Horizon web user interface|
-|ssh admin@localhost&nbsp;-p&nbsp;8101 | The Horizon Karaf CLI via SSH |
-|ssh admin@localhost&nbsp;-p&nbsp;8201 | The Minion1 Karaf CLI via SSH |
+|ssh&nbsp;admin@localhost&nbsp;-p&nbsp;8101 | The Horizon Karaf CLI via SSH |
+|ssh&nbsp;admin@localhost&nbsp;-p&nbsp;8201 | The Minion1 Karaf CLI via SSH |
 |http://localhost:3000                 |The Grafana web user interface|
-|linux-01&nbsp;localhost:1610&nbsp;udp<BR>linux-02&nbsp;localhost:1611&nbsp;udp<BR>linux-02&nbsp;localhost:11612&nbsp;udp | If you want to access the SNMP agents from your host system. Inside the Docker minimal-minion-activemq, they are listening to the default port 161/udp.|
+|linux-01&nbsp;localhost:1610&nbsp;udp<BR>linux-02&nbsp;localhost:1611&nbsp;udp<BR>linux-02&nbsp;localhost:11612&nbsp;udp<BR>linux-04&nbsp;localhost:1613&nbsp;udp | If you want to access the SNMP agents from your host system. Inside the Docker minimal-minion-activemq, they are listening to the default port 161/udp.|
 
 
 
@@ -80,7 +80,7 @@ Grafana Web UI 3000/tcp ─────┼────│   172.20.0.26/24   ├
                              │    ┌────────────────────┐      │       ┌────────────────────┐    │
                              │    │       Minion1      │      │       │                    │    │
                              │    │   172.20.0.25/24   ├──────┘       │     linux-04       │    │
-  Karaf Shell  8101/tcp ─────┼────┤                    │              │  Net-SNMP 1612/udp │    │
+  Karaf Shell  8101/tcp ─────┼────┤                    │              │  Net-SNMP 1612/udp ├────┼────── Net-SNMP 1613/udp
                              │    │                    │ N001         │                    │    │
                              │    │   172.20.2.25/24   ├──────────────┤   172.20.2.101/24  │    │
                              │    └────────────────────┘              └────────────────────┘    │
