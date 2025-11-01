@@ -2,6 +2,15 @@
 
 ### introduction
 
+---
+**NOTE**
+
+Please note that this example no longer works correctly since the USPTO site has been updated since this example was created. 
+Unfortunately there presently no plans to update the USPTO examples.
+However, the examples described here are still quite useful to understand how web site monitoring can be done with OpenNMS.
+---
+
+
 This folder contains several examples of monitoring a popular web site from the USPTO.
 
 An introductory video is provided here [Overview of OpenNMS web monitoring](https://youtu.be/1PDJjAS2NrU)

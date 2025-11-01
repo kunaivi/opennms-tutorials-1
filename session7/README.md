@@ -13,7 +13,7 @@ This session covers
 * Brief introduction to Drools
 * Brief introduction to Scriptd
 
-[Session 7 Video](https://youtu.be/-0Io3K9Tzjc)
+[Session 7 Video](https://youtu.be/-0Io3K9Tzjc) (DEPRICATED - to be updated to match new material)
 
 In this example we will introduce grafana and an nginx proxy in a revised netowrk configuration [docker-compose.yaml](../session7/minimal-minion-activemq/docker-compose.yaml)
 

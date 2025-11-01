@@ -42,7 +42,7 @@ In this example we will import this MIB into OpenNMS and create camera alarms.
 
 **_NOTE:_** Disclaimer: This exercise is provided as a training example. The CHUBB MIBs used may not be the latest specified by the manufacturer.
 
-[Session 3 Video](https://youtu.be/8rpTFEEIDs8)
+[Session 3 Video](https://youtu.be/8rpTFEEIDs8) (DEPRICATED - to be updated to match new material)
 
 ## Getting started
 In this example we will use the same network as we used in [Session 2](../session2/README.md). 

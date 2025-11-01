@@ -2,7 +2,8 @@
 
 # Session 4 - Database Event and Alarm Enrichment
 
-[Session 4 Video](https://youtu.be/DzmvuQRQfXQ)  (first part reviews answer to session 3, at 50 min we look at Event Translator)
+[Session 4 Video](https://youtu.be/DzmvuQRQfXQ)  (first part reviews answer to session 3, at 50 min we look at Event Translator) 
+(DEPRICATED - to be updated to match new material)
 
 ## Introduction
 

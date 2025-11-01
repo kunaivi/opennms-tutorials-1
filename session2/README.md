@@ -10,7 +10,7 @@
 * basic events alarms and traps
 * parsing a mib and creating an event configuration
 
-[Session 2 Video](https://youtu.be/7PUvTShOOkI) (unfortunately shortened due to illness)
+[Session 2 Video](https://youtu.be/7PUvTShOOkI) (unfortunately shortened due to illness) (DEPRICATED - to be updated to match new material)
 
 
 ## OpenNMS Configuration Overview
