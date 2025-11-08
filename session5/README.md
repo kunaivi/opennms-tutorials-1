@@ -20,7 +20,7 @@ You can see which organisation is assigned a  sysOid enterprise number at [IANA 
 
 ## Overview
 
-The majority of performance data collection in SNMP deployments is performed using SNMP but many other performance data protocols are supported including plain `text/CSV`, `ReST/XML/Json`, `Java JMX` and `WBEM`. 
+The majority of performance data collection in SNMP deployments is performed using SNMP but many other performance data protocols are supported by OpenNMS including  `plain text/CSV`, `ReST/XML/Json`, `Java JMX` and `WBEM`. 
 
 For more details see the [Performance Data Collectors Reference](https://docs.opennms.com/horizon/33/reference/performance-data-collection/introduction.html). 
 
