@@ -1,4 +1,4 @@
-[Main Menu](../README.md) | [Session 2](../session2/README.md) | [Exercise-2-2-service-monitoring](../session1/Exercise-2-2-service-monitoring1.md)
+[Main Menu](../README.md) | [Session 2](../session2/README.md) | [Exercise-2-2-service-monitoring](../session2/Exercise-2-2-service-monitoring1.md)
 
 # Exercise Service Monitoring
 
