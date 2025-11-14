@@ -12,7 +12,11 @@
 * SNMP community strings
 * Importing a network - requisitions
 
-[Session 1 Video](https://youtu.be/NYE9KmMtooY) (DEPRICATED - to be updated to match new material)
+# Session 1 Videos
+
+[Course Prerequisites](https://youtu.be/M-FuNBkso4M) - Cloning this repository using GIT and running a test example using Docker Desktop
+
+[OpenNMS Overview Presentation](https://youtu.be/0BVz5_ozEog) - Overview of the key features, use-cases and deployment options for OpenNMS
 
 ## What is OpenNMS
 
@@ -58,7 +62,7 @@ In addition, the [OpenNMS Mattermost chat](https://chat.opennms.com/) channels a
 
 ## Getting Started Tutorial
 
-The OpenNMS documentation covers in some detail the process of [Setting up a production Horizon Instance](https://docs.opennms.com/horizon/33/deployment/core/introduction.html).
+The OpenNMS documentation covers in some detail the process of [Setting up a production Horizon Instance](https://docs.opennms.com/horizon/33/deployment/core/getting-started.html).
 This can be quite daunting for a newcomer and in particular for people just wanting a system for this set of tutorials.
 Fortunately, help is at hand in the form of simple installation scripts and docker-compose examples.
 
