@@ -279,7 +279,7 @@ A good source of information is the [alarm and event documentation](https://docs
 
 But also looking at the [share/xsds/eventconf.xsd](../../main/pristine-opennms-config-files/xsds/eventconf.xsd) can also reveal more options.
 
-We will look a real alarm definition exercise in much more detail in the `More complex case study example` in [Session 3](../session3/README.md)
+We will look a real alarm definition exercise in much more detail in the `More complex case study example` in [Session4](../session4/README.md)
 
  
 
