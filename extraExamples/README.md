@@ -1,4 +1,4 @@
-[Main Menu](../README.md) | [Extra Examples](../session2/extraExamples)
+[Main Menu](../README.md) | [Extra Examples](../extraExamples)
 
 # Extra Examples
 
